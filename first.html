@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function fizzbuzz(){
+            let number;
+            for (number=1;number<=100;number++){
+                if(number%3===0 && number%5===0){
+                    document.write("fizzbuzz\n");
+                }
+                else if(number%3===0){
+                    document.write("fizz\n");
+                }
+                else if(number%5===0){
+                    document.write("buzz\n");
+                }
+                
+            
+                else{
+                    document.write(number +"\n");
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" value="fizz" onclick="fizzbuzz()">
+    </form>
+</body>
+</html>
